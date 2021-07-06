@@ -1,0 +1,26 @@
+@import '../../styles';
+
+.todo-item {
+  .checked-todo {
+    opacity: .8;
+    text-decoration: line-through;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
+  &.high {
+     border-left: 3px solid $danger
+   }
+
+  &.middle {
+    border-left: 3px solid $warning
+  }
+
+  &.low {
+    border-left: 3px solid $info
+  }
+}
+
+
